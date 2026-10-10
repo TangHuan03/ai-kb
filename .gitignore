@@ -1,0 +1,73 @@
+# ============================================
+# ai-kb .gitignore
+# ============================================
+
+# 用户数据（不提交，避免泄露个人 AI 对话）
+raw/
+logs/
+*.log
+*.json
+!templates/**/raw/
+!templates/**/logs/
+
+# 旧版本备份
+old-*/
+old-knowledge-*/
+old-*/
+*.bak
+*~
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 编辑器临时文件
+*.tmp
+*.temp
+.cache/
+.tmp/
+
+# 敏感信息
+.env
+.env.local
+*.secret
+*credentials*
+
+# 特定平台
+node_modules/
+*.lock
+package-lock.json
+
+# 用户报告
+daily/
+!templates/**/daily/
+
+# 示例文件夹
+examples/*.md
+!templates/**/
